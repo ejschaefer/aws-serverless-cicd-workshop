@@ -16,7 +16,6 @@ npm install -g aws-cdk
 If the Cloud9 terminal returns an error, use the `--force` flag: `npm install -g aws-cdk --force`
 {{% /notice %}}
 
-
 ### Initialize project
 
 Now, let's create a folder within our _sam-app_ directory where the pipeline code will reside.
@@ -36,6 +35,15 @@ After a few seconds, our new CDK project should look like this:
 
 ![CdkInit](/images/java/chapter4/cdkinit/cdk-init.png)
 
+
+{{% notice info %}}
+If you are using Cloud9 and get an insufficent space or `ENOSPC: no space left on device` error, you may resize your volume by using the following commands from your Cloud9 terminal.
+{{% /notice %}}
+```bash
+wget https://cicd.serverlessworkshops.io/assets/resize.sh
+chmod +x resize.sh
+./resize.sh 20
+```
 
 ### Project structure
 
